@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demcackytutrongmang(arr) {
+            let count = 0;
+            let character = ["b", "c", "d", "h", "g"]
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < character.length; j++) {
+                    if (arr[i] == character[j]) {
+                     count++;
+                    }
+                }
+            }
+            return count
+        }
+        let string = "huu quy c0422i1"
+        console.log(demcackytutrongmang(string))
+    </script>
+</body>
+</html>
